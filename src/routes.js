@@ -17,6 +17,7 @@ const authMiddleware = require("./middlewares/auth")
 //user
 routes.post('/register', userController.create);
 routes.get('/index', userController.index);
+routes.get('/', userController.index);
 routes.delete('/delete', userController.delete);
 //session
 routes.post('/session', sessionController.create);
